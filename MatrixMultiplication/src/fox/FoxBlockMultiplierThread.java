@@ -43,7 +43,7 @@ public class FoxBlockMultiplierThread implements Runnable {
 
             for (int writeColumnIndex = rightBlock.startColumn; writeColumnIndex < rightBlock.endColumn; writeColumnIndex++) {
 
-                int item = 0;
+                double item = 0;
 
                 for (int leftColumnIndex = leftBlock.startColumn; leftColumnIndex < leftBlock.endColumn; leftColumnIndex++) {
 
