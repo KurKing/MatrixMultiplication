@@ -23,8 +23,8 @@ public class Matrix {
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
 
-                matrix[i][j] = random.nextDouble() * 10;
-//                matrix[i][j] = 1;
+//                matrix[i][j] = random.nextDouble() * 10;
+                matrix[i][j] = 1;
             }
         }
 
@@ -36,9 +36,9 @@ public class Matrix {
         return data;
     }
 
-    public double[] getRow(int index) {
+    public Row getRow(int index) {
 
-        return data[index];
+        return new Row(index, data[index]);
     }
 
     public double getItem(int row, int column) {
@@ -49,11 +49,6 @@ public class Matrix {
     public int getSize() {
 
         return size;
-    }
-
-    public void addValue(double value, int row, int column) {
-
-        data[row][column] += value;
     }
 
     public void print() {
